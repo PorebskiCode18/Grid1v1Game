@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.generaltemplate.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9cffc8" height="124.0" layoutX="21.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+      <GridPane fx:id="gpane" layoutX="204.0" layoutY="209.0">
+      </GridPane>
+      <Label layoutX="337.0" layoutY="32.0" text="Grid Space Wars">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTurn" layoutX="623.0" layoutY="38.0" text="Turn:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoney1" layoutX="28.0" layoutY="71.0" text="Money:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstPieces" layoutX="749.0" layoutY="45.0" prefHeight="144.0" prefWidth="151.0" />
+      <Button layoutX="415.0" layoutY="92.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="36.0" prefWidth="89.0" text="Load Game" />
+      <Label fx:id="lblScore1" layoutX="28.0" layoutY="103.0" text="Score:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9bceff" height="124.0" layoutX="186.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+      <Label fx:id="lblPlayer2" layoutX="198.0" layoutY="38.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMoney2" layoutX="195.0" layoutY="71.0" text="Money:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblScore2" layoutX="195.0" layoutY="103.0" text="Score:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTimeLeft" layoutX="623.0" layoutY="75.0" text="Time Left:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlayer1" layoutX="28.0" layoutY="38.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="15.0" text="Pieces">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstUpgrades" layoutX="750.0" layoutY="224.0" prefHeight="144.0" prefWidth="151.0" />
+      <Label layoutX="782.0" layoutY="194.0" text="Upgrades">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="781.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleUpgrade" prefHeight="28.0" prefWidth="89.0" text="Buy Upgrade" />
+   </children>
+</AnchorPane>
